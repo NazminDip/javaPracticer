@@ -10,13 +10,14 @@ public class Prime {
         
         System.out.print("Enter a Number:");
         int num=input.nextInt();
-        for(int i=num; i>=1; i--){
-            if(i%2==0){
+        for(int i=2; i<num; i++){
+            if(num%i==0){
              sum++;
+                break;
             }
             
         }
-        if(sum==2){
+        if(sum==0){
             System.out.println("It is prime number");
         }else{
             System.out.println("It is not prime number");
