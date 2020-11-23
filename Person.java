@@ -1,28 +1,16 @@
 
-package EncapsulationTest;
+package Inheritance;
 
 public class Person {
     
-    //packaging variable and method in a single unit is Encapsulation
-     private  String name,address;
-      int age;
-        void setprint(String name){
-            this.name=name;
-            
-        }
-        public String getName(){
-        
-        return name;
-        }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-        
+    ////process where one class acquires  properties(method, field)of another class
+      String name,address;
+     
+      void print(){
+          System.out.println("Name is:"+name);
+          System.out.println("Address is:"+address);
+      }
+     
     
     
 }
