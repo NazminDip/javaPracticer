@@ -4,13 +4,15 @@ package Inheritance;
 
 public class Test {
     public static void main(String[] args) {
-        Teacher tt= new Teacher();
-        tt.address="Dhaka";
-        tt.name="Sara";
-        tt.setRank("Admin");
-        tt.print();
-        System.out.println("Rank is:"+tt.getRank());
-        System.out.println("\n ");
+        Teacher t= new Teacher();
+        Animal a= new Animal();
+        Person p=new Person();
+        
+        System.out.println(a instanceof Animal);
+        System.out.println(t instanceof Person);
+        System.out.println(t instanceof Animal);
+        System.out.println(p instanceof Animal);
+        System.out.println(p instanceof Teacher);
       
     }
 }
